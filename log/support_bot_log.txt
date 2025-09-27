@@ -1,0 +1,367 @@
+2025-09-26 14:34:10,990 - WARNING - From C:\Users\venka\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-26 14:34:12,385 - INFO - Use pytorch device_name: cpu
+2025-09-26 14:34:12,385 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-09-26 14:34:12,395 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-26 14:34:13,145 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-26 14:34:13,168 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-26 14:34:13,487 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-26 14:34:13,503 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-26 14:34:13,789 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-26 14:34:13,811 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-26 14:34:14,179 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-26 14:34:14,200 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-26 14:34:14,487 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-26 14:34:14,507 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-26 14:34:14,827 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-26 14:34:14,846 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-26 14:34:15,151 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-26 14:34:15,546 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-26 14:34:15,568 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-26 14:34:17,890 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-26 14:34:17,908 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-26 14:34:18,290 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-26 14:34:18,694 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-26 14:34:18,715 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-26 14:34:19,080 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6857
+2025-09-26 14:34:19,406 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-09-26 14:34:19,406 - INFO - Loading faiss with AVX2 support.
+2025-09-26 14:34:19,554 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-26 14:34:19,575 - INFO - Processed document into 3 chunks.
+2025-09-26 14:34:19,864 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-26 14:34:20,224 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 162
+2025-09-26 14:34:20,509 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-26 14:34:20,864 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-26 14:34:20,969 - INFO - Loaded QA model: distilbert-base-uncased-distilled-squad
+2025-09-26 14:34:20,969 - INFO - Initialized bot with document: faq.txt
+2025-09-26 14:34:20,969 - INFO - Processing query: How do I reset my password?
+2025-09-26 14:34:21,093 - DEBUG - Feedback for response 'Resetting Your Password
+To reset your password, go...': too vague
+2025-09-26 14:34:21,119 - DEBUG - Feedback for response 'Resetting Your Password
+To reset your password, go...': not helpful
+2025-09-26 14:34:21,146 - INFO - Processing query: What's the refund policy?
+2025-09-26 14:34:21,171 - DEBUG - Feedback for response 'Refund Policy
+We offer refunds within 30 days of p...': not helpful
+2025-09-26 14:34:21,205 - DEBUG - Feedback for response 'Refund Policy
+We offer refunds within 30 days of p...': good
+2025-09-26 14:34:21,205 - INFO - Processing query: How do I fly to the moon?
+2025-09-26 14:34:21,234 - DEBUG - Feedback for response 'There is no information about 'How do I fly to the...': too vague
+2025-09-26 14:34:21,259 - DEBUG - Feedback for response 'There is no information about 'How do I fly to the...': too vague
+2025-09-26 14:36:40,140 - WARNING - From C:\Users\venka\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-26 14:36:41,130 - INFO - Use pytorch device_name: cpu
+2025-09-26 14:36:41,131 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-09-26 14:36:41,137 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-26 14:36:42,077 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-26 14:36:42,097 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-26 14:36:42,385 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-26 14:36:42,406 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-26 14:36:42,820 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-26 14:36:42,839 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-26 14:36:43,152 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-26 14:36:43,173 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-26 14:36:43,482 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-26 14:36:43,505 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-26 14:36:43,922 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-26 14:36:43,941 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-26 14:36:44,229 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-26 14:36:44,631 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-26 14:36:44,652 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-26 14:36:46,697 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-26 14:36:46,718 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-26 14:36:47,013 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-26 14:36:47,513 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-26 14:36:47,532 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-26 14:36:47,826 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6857
+2025-09-26 14:36:48,115 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-09-26 14:36:48,116 - INFO - Loading faiss with AVX2 support.
+2025-09-26 14:36:48,208 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-26 14:36:48,224 - INFO - Processed document into 3 chunks.
+2025-09-26 14:36:48,632 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-26 14:36:48,934 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 162
+2025-09-26 14:36:49,225 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-26 14:36:49,658 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-26 14:36:49,769 - INFO - Loaded QA model: distilbert-base-uncased-distilled-squad
+2025-09-26 14:36:49,769 - INFO - Initialized bot with document: faq.txt
+2025-09-26 14:36:49,769 - INFO - Processing query: How do I reset my password?
+2025-09-26 14:36:49,931 - DEBUG - Feedback for response 'Resetting Your Password
+To reset your password, go...': good
+2025-09-26 14:36:49,932 - INFO - Processing query: What's the refund policy?
+2025-09-26 14:36:49,957 - DEBUG - Feedback for response 'Refund Policy
+We offer refunds within 30 days of p...': not helpful
+2025-09-26 14:36:49,986 - DEBUG - Feedback for response 'Refund Policy
+We offer refunds within 30 days of p...': too vague
+2025-09-26 14:36:50,011 - INFO - Processing query: How do I fly to the moon?
+2025-09-26 14:36:50,036 - DEBUG - Feedback for response 'There is no information about 'How do I fly to the...': not helpful
+2025-09-26 14:36:50,060 - DEBUG - Feedback for response 'There is no information about 'Can you clarify the...': too vague
+2025-09-26 14:38:21,805 - WARNING - From C:\Users\venka\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-26 14:38:22,373 - INFO - Use pytorch device_name: cpu
+2025-09-26 14:38:22,373 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-09-26 14:38:22,375 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-26 14:38:23,087 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-26 14:38:23,111 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-26 14:38:23,401 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-26 14:38:23,422 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-26 14:38:23,714 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-26 14:38:23,733 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-26 14:38:24,167 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-26 14:38:24,280 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-26 14:38:24,681 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-26 14:38:24,701 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-26 14:38:24,990 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-26 14:38:25,010 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-26 14:38:25,305 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-26 14:38:25,591 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-26 14:38:25,613 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-26 14:38:27,093 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-26 14:38:27,115 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-26 14:38:27,447 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-26 14:38:27,782 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-26 14:38:27,803 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-26 14:38:28,152 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6857
+2025-09-26 14:38:28,276 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-09-26 14:38:28,276 - INFO - Loading faiss with AVX2 support.
+2025-09-26 14:38:28,296 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-26 14:38:28,304 - INFO - Processed document into 3 chunks.
+2025-09-26 14:38:28,591 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-26 14:38:28,962 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 162
+2025-09-26 14:38:29,250 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-26 14:38:29,701 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-26 14:38:29,744 - INFO - Loaded QA model: distilbert-base-uncased-distilled-squad
+2025-09-26 14:38:29,745 - INFO - Initialized bot with document: faq.txt
+2025-09-26 14:38:29,745 - INFO - Processing query: How do I reset my password?
+2025-09-26 14:38:29,840 - DEBUG - Feedback for response 'Resetting Your Password
+To reset your password, go...': good
+2025-09-26 14:38:29,841 - INFO - Processing query: What's the refund policy?
+2025-09-26 14:38:29,882 - DEBUG - Feedback for response 'Refund Policy
+We offer refunds within 30 days of p...': good
+2025-09-26 14:38:29,883 - INFO - Processing query: How do I fly to the moon?
+2025-09-26 14:38:29,909 - DEBUG - Feedback for response 'There is no information about 'How do I fly to the...': good
+2025-09-26 19:32:58,560 - WARNING - From C:\Users\venka\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-26 19:32:59,508 - INFO - Use pytorch device_name: cpu
+2025-09-26 19:32:59,508 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-09-26 19:32:59,516 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-26 19:33:00,193 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-26 19:33:00,219 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-26 19:33:00,583 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-26 19:33:00,670 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-26 19:33:00,969 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-26 19:33:00,990 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-26 19:33:01,283 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-26 19:33:01,305 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-26 19:33:01,634 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-26 19:33:01,657 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-26 19:33:01,950 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-26 19:33:01,969 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-26 19:33:02,299 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-26 19:33:02,597 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-26 19:33:02,621 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-26 19:33:04,616 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-26 19:33:04,692 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-26 19:33:04,989 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-26 19:33:05,371 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-26 19:33:05,389 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-26 19:33:05,688 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6857
+2025-09-26 19:33:05,930 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-09-26 19:33:05,930 - INFO - Loading faiss with AVX2 support.
+2025-09-26 19:33:06,023 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-26 19:33:06,040 - INFO - Processed document into 3 chunks.
+2025-09-26 19:33:06,353 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-26 19:33:06,664 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 162
+2025-09-26 19:33:06,953 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-26 19:33:07,320 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-26 19:33:07,428 - INFO - Loaded QA model: distilbert-base-uncased-distilled-squad
+2025-09-26 19:33:07,428 - INFO - Initialized bot with document: faq.txt
+2025-09-26 19:33:07,428 - INFO - Processing query: How do I reset my password?
+2025-09-26 19:33:07,476 - DEBUG - Feedback for response 'No answer provided....': good
+2025-09-26 19:33:07,477 - INFO - Processing query: What's the refund policy?
+2025-09-26 19:33:07,518 - DEBUG - Feedback for response 'No answer provided....': not helpful
+2025-09-26 19:33:07,539 - DEBUG - Feedback for response 'No answer provided....': good
+2025-09-26 19:33:07,539 - INFO - Processing query: How do I fly to the moon?
+2025-09-26 19:33:07,566 - DEBUG - Feedback for response 'No answer provided....': too vague
+2025-09-26 19:33:07,588 - DEBUG - Feedback for response 'No answer provided....': too vague
+2025-09-27 11:51:50,801 - WARNING - From C:\Users\venka\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-27 11:51:51,562 - INFO - Use pytorch device_name: cpu
+2025-09-27 11:51:51,562 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-09-27 11:51:51,569 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-27 11:51:52,277 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-27 11:51:52,303 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-27 11:51:52,600 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-27 11:51:52,619 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-27 11:51:52,914 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-27 11:51:52,934 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-27 11:51:53,236 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-27 11:51:53,256 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-27 11:51:53,554 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-27 11:51:53,573 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-27 11:51:53,864 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-27 11:51:53,885 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-27 11:51:54,175 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-27 11:51:54,482 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-27 11:51:54,505 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-27 11:51:56,332 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-27 11:51:56,351 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-27 11:51:56,644 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-27 11:51:56,983 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-27 11:51:57,006 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-27 11:51:57,830 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6857
+2025-09-27 11:51:58,043 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-09-27 11:51:58,043 - INFO - Loading faiss with AVX2 support.
+2025-09-27 11:51:58,125 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-27 11:51:58,134 - INFO - Processed document into 3 chunks.
+2025-09-27 11:51:58,432 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-27 11:51:58,733 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 162
+2025-09-27 11:51:59,022 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-27 11:51:59,357 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-27 11:51:59,421 - INFO - Loaded QA model: distilbert-base-uncased-distilled-squad
+2025-09-27 11:51:59,421 - INFO - Initialized bot with document: faq.txt
+2025-09-27 11:51:59,421 - INFO - Processing query: How do I reset my password?
+2025-09-27 11:51:59,444 - DEBUG - Feedback for response 'No answer provided....': not helpful
+2025-09-27 11:51:59,461 - DEBUG - Feedback for response 'No answer provided....': too vague
+2025-09-27 11:51:59,475 - INFO - Processing query: What's the refund policy?
+2025-09-27 11:51:59,489 - DEBUG - Feedback for response 'No answer provided....': too vague
+2025-09-27 11:51:59,499 - DEBUG - Feedback for response 'No answer provided....': too vague
+2025-09-27 11:51:59,500 - INFO - Processing query: How do I fly to the moon?
+2025-09-27 11:51:59,516 - DEBUG - Feedback for response 'No answer provided....': good
+2025-09-27 12:07:58,857 - WARNING - From C:\Users\venka\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-27 12:08:00,006 - INFO - Use pytorch device_name: cpu
+2025-09-27 12:08:00,006 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-09-27 12:08:00,015 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-27 12:08:00,737 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-27 12:08:00,781 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-27 12:08:01,088 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-27 12:08:01,109 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-27 12:08:04,283 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-27 12:08:04,302 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-27 12:08:04,596 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-27 12:08:04,636 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-27 12:08:04,926 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-27 12:08:04,947 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-27 12:08:05,239 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-27 12:08:05,259 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-27 12:08:07,269 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-27 12:08:07,594 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-27 12:08:07,613 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-27 12:08:09,706 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-27 12:08:09,724 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-27 12:08:10,034 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-27 12:08:11,755 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-27 12:08:11,775 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-27 12:08:12,605 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6857
+2025-09-27 12:08:12,963 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-09-27 12:08:12,964 - INFO - Loading faiss with AVX2 support.
+2025-09-27 12:08:13,108 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-27 12:08:13,128 - INFO - Processed document into 3 chunks.
+2025-09-27 12:08:13,435 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-27 12:08:13,766 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 162
+2025-09-27 12:08:15,688 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-27 12:08:16,083 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-27 12:08:16,214 - INFO - Loaded QA model: distilbert-base-uncased-distilled-squad
+2025-09-27 12:08:16,214 - INFO - Initialized bot with document: faq.txt
+2025-09-27 12:08:16,214 - INFO - Processing query: How do I reset my password?
+2025-09-27 12:08:16,357 - DEBUG - Feedback for response 'No answer provided....': not helpful
+2025-09-27 12:08:16,384 - DEBUG - Feedback for response 'No answer provided....': good
+2025-09-27 12:08:16,384 - INFO - Processing query: What's the refund policy?
+2025-09-27 12:08:16,423 - DEBUG - Feedback for response 'No answer provided....': too vague
+2025-09-27 12:08:16,462 - DEBUG - Feedback for response 'No answer provided....': not helpful
+2025-09-27 12:08:16,497 - INFO - Processing query: How do I fly to the moon?
+2025-09-27 12:08:16,521 - DEBUG - Feedback for response 'No answer provided....': good
+2025-09-27 12:15:28,496 - WARNING - From C:\Users\venka\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-27 12:15:29,502 - INFO - Use pytorch device_name: cpu
+2025-09-27 12:15:29,502 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-09-27 12:15:29,505 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-27 12:15:30,325 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-27 12:15:30,349 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-27 12:15:30,636 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-27 12:15:30,654 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-27 12:15:30,944 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-27 12:15:30,963 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-27 12:15:31,252 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-27 12:15:31,274 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-27 12:15:31,561 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-27 12:15:31,579 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-27 12:15:31,871 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-27 12:15:31,889 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-27 12:15:32,225 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-27 12:15:32,531 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-27 12:15:32,554 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-27 12:15:35,851 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-27 12:15:35,871 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-27 12:15:36,198 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-27 12:15:36,582 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-27 12:15:36,605 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-27 12:15:37,089 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6857
+2025-09-27 12:15:37,366 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-09-27 12:15:37,366 - INFO - Loading faiss with AVX2 support.
+2025-09-27 12:15:37,488 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-27 12:15:37,505 - INFO - Processed document into 3 chunks.
+2025-09-27 12:15:40,272 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-27 12:15:40,582 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 162
+2025-09-27 12:15:42,227 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-27 12:15:42,612 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-27 12:15:42,731 - INFO - Loaded QA model: distilbert-base-uncased-distilled-squad
+2025-09-27 12:15:42,731 - INFO - Initialized bot with document: faq.txt
+2025-09-27 12:15:42,731 - INFO - Processing query: How do I reset my password?
+2025-09-27 12:15:43,097 - INFO - Successfully answered query: How do I reset my password?...
+2025-09-27 12:15:43,097 - DEBUG - Feedback for response 'go to the login page...': not helpful
+2025-09-27 12:15:43,195 - INFO - Successfully answered query: Please explain in detail: How do I reset my passwo...
+2025-09-27 12:15:43,195 - DEBUG - Feedback for response 'go to the login page and click "Forgot Password...': not helpful
+2025-09-27 12:15:43,263 - INFO - Successfully answered query: Please explain in detail: How do I reset my passwo...
+2025-09-27 12:15:43,263 - INFO - Processing query: What's the refund policy?
+2025-09-27 12:15:43,365 - INFO - Successfully answered query: What's the refund policy?...
+2025-09-27 12:15:43,366 - DEBUG - Feedback for response 'We offer refunds within 30 days of purchase...': not helpful
+2025-09-27 12:15:43,422 - INFO - Successfully answered query: Please explain in detail: What's the refund policy...
+2025-09-27 12:15:43,423 - DEBUG - Feedback for response 'We offer refunds within 30 days of purchase...': not helpful
+2025-09-27 12:15:43,482 - INFO - Successfully answered query: Please explain in detail: What's the refund policy...
+2025-09-27 12:15:43,483 - INFO - Processing query: How do I fly to the moon?
+2025-09-27 12:15:43,530 - DEBUG - Feedback for response 'I don't have specific information about 'How do I ...': not helpful
+2025-09-27 12:15:43,566 - DEBUG - Feedback for response 'I don't have specific information about 'Please ex...': not helpful
+2025-09-27 12:16:28,141 - WARNING - From C:\Users\venka\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-27 12:16:29,207 - INFO - Use pytorch device_name: cpu
+2025-09-27 12:16:29,207 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-09-27 12:16:29,211 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-27 12:16:30,520 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-27 12:16:30,541 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-27 12:16:30,828 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-27 12:16:30,848 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-27 12:16:31,658 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-27 12:16:31,679 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-27 12:16:32,509 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-27 12:16:32,530 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-27 12:16:32,848 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-27 12:16:32,868 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-27 12:16:33,245 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-27 12:16:33,264 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-27 12:16:33,563 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-27 12:16:33,850 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-27 12:16:33,868 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-27 12:16:35,864 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-27 12:16:35,883 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-27 12:16:36,185 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-27 12:16:37,332 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-27 12:16:37,350 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-27 12:16:38,148 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6857
+2025-09-27 12:16:38,286 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-09-27 12:16:38,286 - INFO - Loading faiss with AVX2 support.
+2025-09-27 12:16:38,308 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-27 12:16:38,316 - INFO - Processed document into 3 chunks.
+2025-09-27 12:16:38,602 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-27 12:16:40,275 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 162
+2025-09-27 12:16:40,568 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-distilled-squad/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-27 12:16:42,272 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-distilled-squad/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-27 12:16:42,376 - INFO - Loaded QA model: distilbert-base-uncased-distilled-squad
+2025-09-27 12:16:42,376 - INFO - Initialized bot with document: faq.txt
+2025-09-27 12:16:42,376 - INFO - Processing query: How do I reset my password?
+2025-09-27 12:16:42,538 - DEBUG - Feedback for response 'No answer provided....': not helpful
+2025-09-27 12:16:42,567 - DEBUG - Feedback for response 'No answer provided....': good
+2025-09-27 12:16:42,568 - INFO - Processing query: What's the refund policy?
+2025-09-27 12:16:42,602 - DEBUG - Feedback for response 'No answer provided....': too vague
+2025-09-27 12:16:42,631 - DEBUG - Feedback for response 'No answer provided....': too vague
+2025-09-27 12:16:42,631 - INFO - Processing query: How do I fly to the moon?
+2025-09-27 12:16:42,658 - DEBUG - Feedback for response 'No answer provided....': good

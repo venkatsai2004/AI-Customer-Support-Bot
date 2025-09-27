@@ -1,0 +1,19 @@
+API Documentation
+Our REST API allows developers to integrate with our platform.
+Use the base URL https://api.example.com/v1/ for all requests.
+Authentication requires an API key in the header.
+Rate Limiting
+API calls are limited to 1000 requests per hour per API key.
+Exceeded limits return a 429 status code. Premium accounts have higher limits.
+Error Handling
+API errors return standard HTTP status codes.
+400 for bad requests, 401 for unauthorized, 404 for not found, and 500 for server errors.
+Error messages include details in JSON format.
+SDK Support
+We provide official SDKs for Python, JavaScript, and Java.
+Community-maintained SDKs are available for other languages.
+Check our GitHub repository for the latest versions.
+Webhooks
+Set up webhooks to receive real-time notifications about events.
+Configure webhook URLs in your dashboard.
+We support retry logic for failed webhook deliveries.

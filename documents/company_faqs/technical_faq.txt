@@ -1,0 +1,4 @@
+Technical Support
+        System requirements? Windows 10, Mac OS 10.15+, or Linux Ubuntu 18+.
+        Installation help? Download from our website and run the installer.
+        Troubleshooting? Check our knowledge base or contact support.
