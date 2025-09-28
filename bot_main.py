@@ -155,6 +155,6 @@ if __name__ == "__main__":
     sample_queries = [
         "How do I reset my password?",
         "What's the refund policy?",
-        "How do I fly to the moon?"  # Out-of-scope query
+        "How do I fly to the moon?"  
     ]
     bot.run(sample_queries)
