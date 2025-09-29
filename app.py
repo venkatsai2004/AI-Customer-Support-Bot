@@ -20,6 +20,11 @@ except ImportError as e:
     st.error(f"Missing dependency: {e}")
     st.stop()
 
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
 # Configure Streamlit page
 st.set_page_config(
     page_title="AI Customer Support Bot",
@@ -31,11 +36,14 @@ st.set_page_config(
 class SupportBotAgent:
     def __init__(self, document_content: str, document_name: str = "document"):
         self.document_name = document_name
+        self.similarity_threshold = 0.8
+        self.qa_confidence_threshold = 0.1
+        self.max_context_length = 512
         try:
             # Initialize embeddings with caching for HF Spaces
             self.embeddings = HuggingFaceEmbeddings(
                 model_name="sentence-transformers/all-MiniLM-L6-v2",
-                cache_folder="./models"
+                cache_folder="./models"  
             )
             self.vectorstore = self._process_document(document_content)
             self.qa_pipeline = self._setup_qa_chain()
@@ -53,9 +61,10 @@ class SupportBotAgent:
         documents = [Document(page_content=text) for text in texts if text.strip()]
 
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=500,
-            chunk_overlap=50,
-            length_function=len
+            chunk_size=300,
+            chunk_overlap=100,
+            length_function=len,
+            separators=["\n\n", "\n", ". ", "? ", "! ", " ", ""]
         )
         split_docs = text_splitter.split_documents(documents)
 
@@ -87,23 +96,38 @@ class SupportBotAgent:
                 }
             
             best_doc, best_score = docs_and_scores[0]
-            context = best_doc.page_content
             
-            if best_score > 1.2:
+            if best_score > self.similarity_threshold:
                 return {
                     "answer": f"I don't have specific information about '{query}' in my knowledge base.",
                     "context_used": None
                 }
             
-            # Try QA pipeline if available
+            # Prepare context
+            context = best_doc.page_content
+            
+            # Add additional context from other relevant chunks
+            if len(docs_and_scores) > 1:
+                for doc, score in docs_and_scores[1:3]:
+                    if score < self.similarity_threshold * 1.2:
+                        context += " " + doc.page_content
+            
+            # Limit context length
+            if len(context) > self.max_context_length:
+                context = context[:self.max_context_length]
+            
+            # Try QA pipeline
             if self.qa_pipeline:
                 try:
                     qa_result = self.qa_pipeline(question=query, context=context)
-                    answer = qa_result["answer"] if qa_result["score"] > 0.1 else context
+                    if qa_result["score"] > self.qa_confidence_threshold and qa_result["answer"].strip():
+                        answer = qa_result["answer"].strip()
+                    else:
+                        answer = context.strip()
                 except:
-                    answer = context
+                    answer = context.strip()
             else:
-                answer = context
+                answer = context.strip()
             
             return {
                 "answer": answer,
@@ -117,12 +141,19 @@ class SupportBotAgent:
             }
 
     def get_feedback(self, answer: str) -> str:
-        if len(answer) < 20:
-            return "too vague"
-        elif "I don't have" in answer or "Error" in answer:
+        if not isinstance(answer, str) or not answer.strip():
             return "not helpful"
+        
+        answer = answer.strip()
+        
+        if "I don't have" in answer or "Error" in answer:
+            return "not helpful"
+        elif len(answer) < 30:
+            return "too vague"
+        elif len(answer) > 200:
+            return random.choice(["good", "too vague"])
         else:
-            return random.choice(["good", "too vague", "not helpful"])
+            return random.choice(["good", "good", "too vague", "not helpful"])
 
     def adjust_response(self, query: str, response: dict, feedback: str) -> dict:
         try:
@@ -148,7 +179,7 @@ if 'chat_history' not in st.session_state:
 
 # Default sample documents
 SAMPLE_DOCUMENTS = {
-    "Customer Support FAQ": """
+"Customer Support FAQ": """
 Resetting Your Password
 To reset your password, go to the login page and click "Forgot Password." Enter your email address and follow the link sent to your email inbox.
 
@@ -165,7 +196,7 @@ Technical Support
 If you're experiencing technical issues, first try clearing your browser cache and cookies. Make sure you're using a supported browser (Chrome, Firefox, Safari, or Edge).
 """,
     
-    "API Documentation": """
+"API Documentation": """
 API Documentation
 Our REST API allows developers to integrate with our platform. Use the base URL https://api.example.com/v1/ for all requests.
 
@@ -182,7 +213,7 @@ Webhooks
 Set up webhooks to receive real-time notifications about events. Configure webhook URLs in your dashboard.
 """,
 
-    "Product Guide": """
+"Product Guide": """
 Getting Started
 Welcome to our platform! This guide will help you get started quickly and efficiently.
 
@@ -351,7 +382,6 @@ def main():
         else:
             st.info("No conversations yet. Ask a question to get started!")
         
-        # Model info
         st.subheader("Model Information")
         st.write("**Embedding:** all-MiniLM-L6-v2")
         st.write("**QA Model:** DistilBERT")
