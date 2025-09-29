@@ -119,9 +119,13 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 # 🌐 Deployment Options
 
-- <p>For the Live Deployment,vist the <a href="https://huggingface.co/spaces/Vsai2004/AI_Customer_Support_Bot/tree/main" target="_blank">
-Ai-Customer-Bot</a>.
+- <p>
+  For the Live Deployment, visit the 
+  <a href="https://huggingface.co/spaces/Vsai2004/AI_Customer_Support_Bot/tree/main" target="_blank">
+    AI Customer Support Bot
+  </a>.
 </p>
+
 - Local Development: python bot_main.py
 
 # Streamlit Web App
