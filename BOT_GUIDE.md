@@ -5,7 +5,7 @@
 * **Purpose: Provides the main bot intelligence for answering customer queries based on uploaded documents with iterative response improvement.**
 * **Usage: Run python bot_main.py for CLI interface or import the SupportBotAgent class into other applications.**
 
-  \
+  
 
 # app.py
 
