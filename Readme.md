@@ -44,89 +44,91 @@ numpy>=1.21.0
 ```
 
 # 📌 Basic Usage
-
+```bash
 from bot_main import SupportBotAgent
+```
 
 # Initialize the bot with your document
-
+```bash
 bot = SupportBotAgent("faq.txt")
-
+```
 # Process queries
 
 queries = \[
-"How do I reset my password?",
-"What's the refund policy?",
-"How do I contact support?"
+- "How do I reset my password?",
+- "What's the refund policy?",
+- "How do I contact support?"
 \]
-bot.run(queries)
+- bot.run(queries)
 
 # 📌 Advanced Usage
 
 # Process individual queries with manual feedback
 
-response = bot.answer_query("How do I reset my password?")
-feedback = bot.get_feedback(response\["answer"\])
-improved_response = bot.adjust_response(query, response, feedback)
+- response = bot.answer_query("How do I reset my password?")
+- feedback = bot.get_feedback(response\["answer"\])
+- improved_response = bot.adjust_response(query, response, feedback)
 
 # 🏃 Running Examples
 
 python example_usage.py
 
-This demonstrates:
-Basic usage with FAQs
-Custom document processing
-Batch processing multiple documents
-Performance analysis
-Feedback strategy testing
+- This demonstrates:
+- Basic usage with FAQs
+- Custom document processing
+- Batch processing multiple documents
+- Performance analysis
+- Feedback strategy testing
 
 # 📑 Document Requirements
 
-Supported Formats: .txt, .pdf
-Best Practice: Use clear section titles and structured content
+- Supported Formats: .txt, .pdf
+- Best Practice: Use clear section titles and structured content
 
 # ⚙️ Configuration
 
-Similarity Threshold
-return score < 1.0  # Adjust threshold as needed
+- Similarity Threshold
+- return score < 1.0  # Adjust threshold as needed
 
 # Chunk Size
 
 text_splitter = RecursiveCharacterTextSplitter(
-chunk_size=500,
-chunk_overlap=50,
-length_function=len
+- chunk_size=500,
+- chunk_overlap=50,
+- length_function=len,
+- separators=["\n\n", "\n", ". ", "? ", "! ", " ", ""]
 )
 
 # 🐛 Troubleshooting
 
-“No answer provided” → Check formatting, file paths, and query relevance
-Slow performance → First run downloads models (normal delay). Reduce chunk size for large docs
-Memory issues → Reduce chunk_size, use CPU instead of GPU if needed
+- “No answer provided” → Check formatting, file paths, and query relevance
+- Slow performance → First run downloads models (normal delay). Reduce chunk size for large docs
+- Memory issues → Reduce chunk_size, use CPU instead of GPU if needed
 
 # Enable debug logging:
 
-logging.basicConfig(level=logging.DEBUG)
+- logging.basicConfig(level=logging.DEBUG)
 
 # 🌐 Deployment Options
 
-[See the HuggingFace Deployment:](https://huggingface.co/spaces/Vsai2004/AI_Customer_Support_Bot/tree/main).
-Local Development: python bot_main.py
+- [See the HuggingFace Deployment:](https://huggingface.co/spaces/Vsai2004/AI_Customer_Support_Bot/tree/main).
+- Local Development: python bot_main.py
 
 # Streamlit Web App
-
+```bash
 pip install streamlit
 streamlit run app.py
-
+```
 # Docker
-
+```bash
 FROM python:3.9-slim
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
 CMD \["python", "bot_main.py"\]
-
+```
 # API Integration (Flask)
-
+```bash
 from flask import Flask, request, jsonify
 from bot_main import SupportBotAgent
 
@@ -138,7 +140,7 @@ def handle_query():
 data = request.json
 response = bot.answer_query(data\['query'\])
 return jsonify(response)
-
+```
 # 📊 Performance Metrics
 
 * Response time per query
