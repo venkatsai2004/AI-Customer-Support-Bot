@@ -6,7 +6,7 @@ import time
 parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, parent_dir)
 
-from bot_main import SupportBotAgent
+from support_bot_main import SupportBotAgent
 
 def basic_usage_example():
     print("=" * 60)
