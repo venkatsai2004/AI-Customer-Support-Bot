@@ -29,7 +29,6 @@ Contact
 You can contact us at support@example.com.""")
 
     bot = SupportBotAgent(sample_faq_path)
-    bot.log_file = log_path
     queries = [
         "How do I reset my password?",
         "What's the refund policy?",
@@ -50,7 +49,6 @@ def advanced_usage_example():
     log_path = os.path.join(logs_dir, "advanced_usage_log.txt")
 
     bot = SupportBotAgent(sample_faq_path)
-    bot.log_file = log_path
     queries = [
         "I need help with billing",
         "Technical problems with the software",
@@ -127,7 +125,6 @@ def feedback_strategy_example():
     log_path = os.path.join(logs_dir, "strategy_bot_log.txt")
 
     bot = SupportBotAgent(sample_faq_path)
-    bot.log_file = log_path
 
     def detailed_explanation_strategy(self, query, response_info, feedback):
         context = response_info.get("context_used", "")
@@ -170,8 +167,10 @@ def similarity_threshold_example():
     query = "How do I change my password?"
     if bot._is_query_covered(query):
         print(f"✓ Query is covered: {query}")
+
     else:
         print(f"✗ Query not covered: {query}")
+
 
 def batch_processing_example():
     print("\n" + "=" * 60)
@@ -183,18 +182,27 @@ def batch_processing_example():
     os.makedirs(logs_base, exist_ok=True)
 
     documents = {
-        "general_faq.txt": """
-        General Questions
-        What is our company about? We provide innovative software solutions.
-        Where are you located in India? Our branch is in Pune.
-        When were you founded? We were founded in 2020.
-        """,
-        "technical_faq.txt": """
-        Technical Support
-        System requirements? Windows 10, Mac OS 10.15+, or Linux Ubuntu 18+.
-        Installation help? Download from our website and run the installer.
-        Troubleshooting? Check our knowledge base or contact support.
-        """
+        "general_faq.txt": """General Questions
+
+    What is our company about?
+    We provide innovative software solutions for businesses.
+
+    Where are you located?  
+    Our main branch is located in Pune, India.
+
+    When were you founded?
+    We were founded in 2020 and have been growing steadily since then.""",
+
+        "technical_faq.txt": """Technical Support
+
+    What are the system requirements?
+    System requirements: Windows 10 or later, Mac OS 10.15 or later, or Linux Ubuntu 18 or later.
+
+    How do I install the software?
+    Download the installer from our website and run the installation file. Follow the on-screen instructions.
+
+    What should I do for troubleshooting?
+    Check our knowledge base first, or contact our support team for technical assistance."""
     }
 
     document_paths = {}
@@ -207,10 +215,9 @@ def batch_processing_example():
     all_results = {}
     for doc_name, doc_path in document_paths.items():
         print(f"\n--- Processing {doc_name} ---")
-        log_filename = os.path.join(logs_base, f"batch_{doc_name}_log.txt")
 
         bot = SupportBotAgent(doc_path)
-        bot.log_file = log_filename
+        # Removed: bot.log_file = log_filename (no longer needed)
 
         if "general" in doc_name:
             queries = [
@@ -238,7 +245,9 @@ def batch_processing_example():
 
     for doc_name, results in all_results.items():
         if results:
-            successful = sum(1 for r in results if not r.get("out_of_scope", True))
+            # FIXED: Proper success calculation based on actual answers
+            successful = sum(1 for r in results 
+                        if "I apologize, but I cannot find" not in r.get('final_answer', ''))
             print(f"{doc_name}: {successful}/{len(results)} successful queries")
         else:
             print(f"{doc_name}: 0/0 successful queries")
@@ -256,7 +265,6 @@ def performance_analysis_example():
     log_path = os.path.join(logs_dir, "performance_analysis_log.txt")
 
     bot = SupportBotAgent(sample_faq_path)
-    bot.log_file = log_path
     test_queries = [
         "How do I reset my password?",
         "What's your refund policy?",
@@ -275,8 +283,8 @@ def performance_analysis_example():
         response_info = bot.answer_query(query)
         answer = response_info["answer"]
         result = {
-            "initial_confidence": 1.0 if "I don't have enough" not in answer else 0.0,
-            "out_of_scope": "I don't have enough" in answer,
+            "initial_confidence": 1.0 if "I don't have " not in answer else 0.0,
+            "out_of_scope": "I don't have " in answer,
         }
         end_time = time.time()
         processing_time = end_time - start_time
