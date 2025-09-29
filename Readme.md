@@ -1,10 +1,8 @@
-## 🤖 AI Customer Support Bot with Document Training
+# 🤖 AI Customer Support Bot with Document Training
 
 
 This project is an **agentic customer support bot** that trains on provided documents (PDF or text files) and answers user queries using advanced NLP models.It includes a feedback loop for continuous improvement, ensuring accurate and context-aware responses.
 
-
----
 
 ## 🚀 Features
 
@@ -15,8 +13,6 @@ This project is an **agentic customer support bot** that trains on provided docu
 * 📝 **Comprehensive Logging** – Tracks all decisions, iterations, and errors
 * 🛡️ **Graceful Fallbacks** – Handles out-of-scope queries appropriately
 
-
----
 
 ## ⚙️ Setup Instructions
 
