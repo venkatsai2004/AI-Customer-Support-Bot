@@ -121,7 +121,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 - <p>
   For the Live Deployment, visit the 
-  <a href="(https://huggingface.co/spaces/Vsai2004/AI_Customer_Support_Bot)" target="_blank">
+  <a href="https://huggingface.co/spaces/Vsai2004/AI_Customer_Support_Bot" target="_blank">
     AI Customer Support Bot
   </a>.
 </p>
