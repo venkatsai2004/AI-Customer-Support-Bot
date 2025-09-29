@@ -3,6 +3,9 @@
 
 This project is an **agentic customer support bot** that trains on provided documents (PDF or text files) and answers user queries using advanced NLP models.It includes a feedback loop for continuous improvement, ensuring accurate and context-aware responses.
 
+# Content in Files
+- [Read this for the Content in the "app.py",example_usage.py,support_bot_main.py:](BOT_GUIDE.md)
+
 
 ## 🚀 Features
 
