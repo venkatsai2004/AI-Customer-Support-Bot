@@ -1,4 +1,4 @@
-# **==Bot_main.py==**
+# Bot_main.py
 
 * **Core AI customer support bot implementation using advanced NLP models and vector search.**
 * **Contains: SupportBotAgent class with document processing, FAISS vector store, DistilBERT QA pipeline, and feedback loop system.**
@@ -7,7 +7,7 @@
 
   \
 
-# ==app.py==
+# app.py
 
 * Streamlit web application providing a user-friendly interface for the customer support bot.
 * Contains: Web UI components, file upload handling, sample documents, chat interface, and performance analytics dashboard.
@@ -15,7 +15,7 @@
 * **Usage: Launch with streamlit run app.py then open the provided localhost URL in your browser to interact with the bot.**
 
 
-# ==example_usage.py==
+# example_usage.py
 
 * **Comprehensive demonstration script showcasing various bot capabilities and usage scenarios.**
 * **Contains: Multiple example functions testing basic usage, advanced features, custom documents, batch processing, and performance analysis.**
