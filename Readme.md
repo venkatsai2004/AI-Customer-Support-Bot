@@ -4,7 +4,11 @@
 This project is an **agentic customer support bot** that trains on provided documents (PDF or text files) and answers user queries using advanced NLP models.It includes a feedback loop for continuous improvement, ensuring accurate and context-aware responses.
 
 # Content in Files
-- For detailed information on `app.py`, `example_usage.py`, and `support_bot_main.py`, please refer to [BOT_GUIDE.md](BOT_GUIDE.md).
+- <p>
+  For detailed information on <code>app.py</code>, <code>example_usage.py</code>, and <code>support_bot_main.py</code>, please refer to 
+  <a href="BOT_GUIDE.md" target="_blank">BOT_GUIDE.md</a>.
+</p>
+
 
   
 
@@ -115,7 +119,9 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 # 🌐 Deployment Options
 
-- [See the HuggingFace Deployment:](https://huggingface.co/spaces/Vsai2004/AI_Customer_Support_Bot/tree/main).
+- <p> For the Live Deployment,vist the <a href="https://huggingface.co/spaces/Vsai2004/AI_Customer_Support_Bot/tree/main" target="_blank">
+Ai-Customer-Bot</a>/
+</p>
 - Local Development: python bot_main.py
 
 # Streamlit Web App
