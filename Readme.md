@@ -136,7 +136,7 @@ streamlit run app.py
 # Docker
 ```bash
 FROM python:3.9-slim
-WORKDIR /app  # <--- New instruction
+WORKDIR /app  
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
