@@ -136,10 +136,11 @@ streamlit run app.py
 # Docker
 ```bash
 FROM python:3.9-slim
+WORKDIR /app  # <--- New instruction
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
-CMD \["python", "bot_main.py"\]
+CMD ["python", "bot_main.py"]
 ```
 # API Integration (Flask)
 ```bash
